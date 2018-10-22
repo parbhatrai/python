@@ -1,5 +1,5 @@
 
-
+#TASKS Q1 TO Q6
 q1 = [123, 354, 324, 2340, 324, 234, 756, 955]
 max=0
 for i in q1:
@@ -18,7 +18,6 @@ new_q3 = {v: k for k,v in q3.items()}
 print(new_q3)
 
 
-
 q6 = [33, 56, 76, 78, 34, 56]
 
 for i in q6:
@@ -32,7 +31,7 @@ for i in q6:
         print (str(i) + "Not divisible by 3 or 5")
 
 
-
+#FUNCTIONS
 def formatter(text):
     return "****\n" + text + "\n******"
 
@@ -42,6 +41,7 @@ def printwithformatter(formattingfunction, text):
 printwithformatter(formatter, "Hello")
 
 
+#PARTIAL FUNCTIONS
 from functools import partial
 #normal function
 def sumof(a, b):
@@ -49,7 +49,6 @@ def sumof(a, b):
 
 print(sumof(1, 2))
 
-#partial function
 plustwo = partial(sumof, 2)
 print(plustwo(1))
 
@@ -94,7 +93,7 @@ def pycat(name):
 pycat("test.txt")
 
 
-
+#MKDIR COMMAND
 import os
 def pymkdir(name):
     if os.path.isdir(name):
