@@ -94,6 +94,7 @@ pycat("test.txt")
 
 
 #MKDIR COMMAND
+
 import os
 def pymkdir(name):
     if os.path.isdir(name):
@@ -102,3 +103,4 @@ def pymkdir(name):
         os.mkdir(name)
 
 pymkdir("/Users/Administrator/Desktop/project")
+
