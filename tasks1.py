@@ -29,3 +29,15 @@ for i in q6:
         print (str(i) + "BUZZ")
     else:
         print (str(i) + "Not divisible by 3 or 5")
+
+#PRINT PRIME NUMBERS FROM 1 TO N
+limit = int(input("Enter a number:"))
+for num in range(0, limit + 1):
+    count = 0
+    for i in range(2, (num//2 + 1)):
+        if(num % i == 0):
+            count = count + 1
+            break
+
+    if (count == 0 and num != 1):
+        print(" %d" %num, end = '  ')
