@@ -1,4 +1,4 @@
-
+"""
 #TASKS Q1 TO Q6
 q1 = [123, 354, 324, 2340, 324, 234, 756, 955]
 max=0
@@ -103,4 +103,19 @@ def pymkdir(name):
         os.mkdir(name)
 
 pymkdir("/Users/Administrator/Desktop/project")
+
+"""
+
+#PYTHON SCRIPT
+
+from pathlib import Path
+print ("The home folder location is: ", str(Path.home()))
+
+
+import platform
+print("Hostname of the machine is: ", platform.node())
+
+import os
+print("Current working directory is: ", os.getcwd())
+
 
